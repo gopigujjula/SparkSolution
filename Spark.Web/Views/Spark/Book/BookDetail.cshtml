@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc;
+@using Spark.Web
+
+<h2>
+    @Html.Sitecore().Field(BookTemplate.Book.Fields.Title.ToString())
+</h2>
+<div>
+    @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString())
+</div>
+<div>
+    @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString())
+</div>
+<div>
+    @Html.Sitecore().Field(BookTemplate.Book.Fields.Publisher.ToString())
+</div>

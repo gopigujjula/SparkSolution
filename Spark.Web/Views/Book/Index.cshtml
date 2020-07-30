@@ -1,0 +1,43 @@
+﻿@using Sitecore.Mvc;
+@using Spark.Web
+@model Spark.Web.Models.BookModel
+
+@if (Model != null)
+{
+    <div>
+        @Html.Sitecore().Field(BookTemplate.Book.Fields.ISBN10.ToString(), Model.BookItem)
+    </div>
+    <div>
+        @Html.Sitecore().Field(BookTemplate.Book.Fields.NumberofPages.ToString(), Model.BookItem)
+    </div>
+    <div>
+        @Html.Sitecore().Field(BookTemplate.Book.Fields.Price.ToString(), Model.BookItem)
+    </div>
+    <div>
+        @Model.Summary
+    </div>
+
+    if (Model.Authors != null && Model.Authors.Count > 0)
+    {
+        <h2>Authors</h2>
+        foreach (var author in Model.Authors)
+        {
+            <div>
+                @Html.Sitecore().Field("First Name", author)
+            </div>
+        }
+    }
+
+    if (Model.BookType != null)
+    {
+        <h2>BookType</h2>
+        <div>
+            @Html.Sitecore().Field("Title", Model.BookType)
+        </div>
+    }
+
+    <h2>Book Language</h2>
+    <div>
+        @Model.BookLanguage
+    </div>
+}

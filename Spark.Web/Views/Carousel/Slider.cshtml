@@ -1,0 +1,32 @@
+﻿@using Sitecore.Mvc;
+@using Spark.Web
+@using Sitecore.Data.Fields
+@model Spark.Web.Models.SliderModel
+
+@if (Model != null && Model.Slides != null && Model.Slides.Count() > 0)
+{
+    <section class="slider">
+        <div class="container">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                @foreach (var slide in Model.Slides)
+                {
+                    <div class="item">
+                        <div class="slide">
+                            @Html.Sitecore().Field("{4CAFB9E4-B470-4370-BEA6-C9081DB6EA4A}", slide)
+                            <div class="content">
+                                <div class="title">
+                                    <h3>@Html.Sitecore().Field("{5B49D6EF-9E22-4C74-8C0E-1FEEC3B894DA}", slide)</h3>
+                                    <h5>@Html.Sitecore().Field("{DD7AA41C-EBAB-4488-B93F-789908943FF1}", slide)</h5>
+                                    @Html.Sitecore().Field("{C17A6837-3605-49D9-9AEE-159DFC38DE1C}", slide, new { @class = "btn" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+
+
