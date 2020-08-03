@@ -1,0 +1,22 @@
+﻿@using Sitecore.Mvc;
+@using Spark.Web
+@model List<Sitecore.Data.Items.Item>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <div>
+            @Html.Sitecore().Field(BookTemplate.Book.Fields.Title.ToString(), item)
+        </div>
+        @*<div>
+            @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString(), item)
+        </div>
+        <div>
+            @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString(), item)
+        </div>*@
+        <div>
+            @Html.Sitecore().Field(BookTemplate.Book.Fields.Publisher.ToString(), item)
+        </div>
+    }
+}

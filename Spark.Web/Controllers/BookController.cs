@@ -6,6 +6,9 @@ using System.Web;
 using System.Web.Mvc;
 using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.SearchTypes;
+using Sitecore.ContentSearch.Linq;
 
 namespace Spark.Web.Controllers
 {
@@ -42,6 +45,34 @@ namespace Spark.Web.Controllers
             Field laguageField = Sitecore.Context.Item.Fields[BookTemplate.Book.Fields.BookLanguage];
             model.BookLanguage = laguageField.Value;
             return View(model);
+        }
+
+        public ActionResult BookList()
+        {
+            //Sitecore Index -> can hardcode index name or use default Index Resolver
+            //RootItem
+            //Filters - Where Clause
+            //Template
+            //for SearchBox - search text
+            //Language
+            //Pagination (server-side pagination)
+            SearchResults<SearchResultItem> results;
+            using (var context = ContentSearchManager.GetIndex("sitecore_master_index").CreateSearchContext())
+            {
+                IQueryable<SearchResultItem> query = context.GetQueryable<SearchResultItem>();
+                query = query.Where(f => f.Paths.Contains(Sitecore.Context.Item.ID)
+                  && f.TemplateId == BookTemplate.Book.ID
+                  && f.Language == Sitecore.Context.Language.Name);
+
+                results = query.GetResults();                               
+            }
+            List<SearchResultItem> resultItems = results?.Hits.Select(f => f.Document).ToList();
+            List<Item> bookItems = new List<Item>();
+            foreach (var bookItem in resultItems)
+            {
+                bookItems.Add(bookItem.GetItem());
+            }
+            return View(bookItems);
         }
     }
 }
