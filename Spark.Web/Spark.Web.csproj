@@ -122,16 +122,20 @@
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="assets\js\owl.carousel.min.js" />
     <Content Include="Views\Spark\BaseLayout.cshtml" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="App_Config\Include\zzz\Spark.ContentSearch.Solr.Index.Web.config" />
     <Content Include="Views\Spark\Book\BookDetail.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
     <Content Include="Views\Header\Index.cshtml" />
     <Content Include="Views\Carousel\Slider.cshtml" />
     <Content Include="Views\Book\BookList.cshtml" />
+    <None Include="Properties\PublishProfiles\Spark Profile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputedFields\AuthorNameComputedField.cs" />
     <Compile Include="Controllers\CarouselController.cs" />
+    <Compile Include="Models\BookSearchResult.cs" />
+    <Compile Include="Models\CustomSearchResultItem.cs" />
     <Compile Include="Models\SliderModel.cs" />
     <Compile Include="NavigationTemplate.cs" />
     <Compile Include="HeaderTemplate.cs" />

@@ -1,22 +1,29 @@
 ﻿@using Sitecore.Mvc;
 @using Spark.Web
-@model List<Sitecore.Data.Items.Item>
+@using Spark.Web.Models
+@model BookSearchResult
 
-@if (Model != null && Model.Any())
+@if (Model != null && Model.BookItems != null && Model.BookItems.Any())
 {
-    foreach (var item in Model)
+    <span>=================================================================================</span>
+    foreach (var bookItem in Model.BookItems)
     {
-        <div>
-            @Html.Sitecore().Field(BookTemplate.Book.Fields.Title.ToString(), item)
-        </div>
+    <div>
+        Book: @bookItem.Title
+    </div>
         @*<div>
-            @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString(), item)
-        </div>
+                @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString(), item)
+            </div>
+            <div>
+                @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString(), item)
+            </div>*@
+    <div>
+        Publisher: @bookItem.Publisher
+    </div>
         <div>
-            @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString(), item)
-        </div>*@
-        <div>
-            @Html.Sitecore().Field(BookTemplate.Book.Fields.Publisher.ToString(), item)
+            Author: @bookItem.AuthorName
         </div>
+
+        <span>=================================================================================</span>
     }
 }
