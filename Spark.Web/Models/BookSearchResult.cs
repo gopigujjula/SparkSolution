@@ -9,6 +9,7 @@ namespace Spark.Web.Models
     {
         public List<BookItem> BookItems { get; set; }        
         public List<Facet> Facets { get; set; }
+        public int AvailableCount { get; set; }
     }
 
     public class BookItem

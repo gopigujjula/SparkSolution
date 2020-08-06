@@ -128,6 +128,7 @@
     <Content Include="Views\Header\Index.cshtml" />
     <Content Include="Views\Carousel\Slider.cshtml" />
     <Content Include="Views\Book\BookList.cshtml" />
+    <Content Include="App_Config\Include\zzz\Spark.Sitedefinition.config" />
     <None Include="Properties\PublishProfiles\Spark Profile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
