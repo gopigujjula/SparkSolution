@@ -8,22 +8,32 @@
     <span>=================================================================================</span>
     foreach (var bookItem in Model.BookItems)
     {
-    <div>
-        Book: @bookItem.Title
-    </div>
+        <div>
+            Book: @bookItem.Title
+        </div>
         @*<div>
                 @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString(), item)
             </div>
             <div>
                 @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString(), item)
             </div>*@
-    <div>
-        Publisher: @bookItem.Publisher
-    </div>
+        <div>
+            Publisher: @bookItem.Publisher
+        </div>
         <div>
             Author: @bookItem.AuthorName
         </div>
 
+        <span>=================================================================================</span>
+    }
+
+    <span>=================================================================================</span>
+    <h2>Authors</h2>
+    foreach (var facet in Model.Facets)
+    {
+        <div>
+            Author Name: @facet.Name (@facet.Count)
+        </div>                
         <span>=================================================================================</span>
     }
 }

@@ -68,9 +68,11 @@ namespace Spark.Web.Controllers
                 IQueryable<CustomSearchResultItem> query = context.GetQueryable<CustomSearchResultItem>();
                 query = query.Where(f => f.Paths.Contains(Sitecore.Context.Item.ID)
                   && f.TemplateId == BookTemplate.Book.ID
-                  && f.Language == Sitecore.Context.Language.Name).OrderBy(f => f.Name).Page(0, 10);               
+                  && f.Language == Sitecore.Context.Language.Name)
+                  .FacetOn(f => f.AuthorName, 3)
+                  .OrderBy(f => f.Name).Page(0, 10);
 
-                results = query.GetResults();                               
+                results = query.GetResults();
             }
             List<CustomSearchResultItem> resultItems = results?.Hits.Select(f => f.Document).ToList();
             List<Item> bookItems = new List<Item>();
@@ -90,6 +92,17 @@ namespace Spark.Web.Controllers
                 books.Add(new BookItem { Title = bookItem.Title, Publisher = bookItem.Publisher, AuthorName = bookItem.AuthorName });
                 model.BookItems = books;
             }
+
+            List<Facet> facets = new List<Facet>();
+            foreach(var category in results.Facets?.Categories)
+            {
+                foreach(var facet in category.Values)
+                {
+                    facets.Add(new Facet { Name = facet.Name, Count = facet.AggregateCount });
+                }
+            }
+            model.Facets = facets;
+
             return View(model);
         }
     }
