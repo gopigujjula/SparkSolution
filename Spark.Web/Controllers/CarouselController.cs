@@ -1,4 +1,5 @@
-﻿using Sitecore.Data.Fields;
+﻿using Glass.Mapper.Sc.Web.Mvc;
+using Sitecore.Data.Fields;
 using Sitecore.Mvc.Presentation;
 using Spark.Web.Models;
 using System;
@@ -11,11 +12,20 @@ namespace Spark.Web.Controllers
 {
     public class CarouselController : Controller
     {
+        IMvcContext _mvcContext;
+        public CarouselController()
+        {
+            _mvcContext = new MvcContext();
+        }
         // GET: Carousel
         public ActionResult Slider()
         {
             SliderModel model = new SliderModel();
 
+            if(_mvcContext.HasDataSource)
+            {
+                _mvcContext.GetDataSourceItem<SliderModel>();
+            }
             var dataSourceID = RenderingContext.Current.Rendering.DataSource;
             var datasourceItem = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(dataSourceID));
 

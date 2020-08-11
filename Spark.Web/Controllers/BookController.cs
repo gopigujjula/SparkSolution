@@ -7,17 +7,26 @@ using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq;
+using Glass.Mapper.Sc.Web.Mvc;
+using Spark.Web.Models.Base;
 
 namespace Spark.Web.Controllers
 {
     public class BookController : Controller
     {
+        IMvcContext _mvcContext;
+        public BookController()
+        {
+            _mvcContext = new MvcContext();
+        }
         // GET: Book
         public ActionResult Index()
         {
             BookModel model = new BookModel();
             //Book Item
             model.BookItem = Sitecore.Context.Item;
+
+            var bookModel = _mvcContext.GetContextItem<IBook>();
 
             //Summary Field
             Field summaryField = Sitecore.Context.Item.Fields[BookTemplate.Book.Fields.Summary];
@@ -42,7 +51,7 @@ namespace Spark.Web.Controllers
             //Language Field
             Field laguageField = Sitecore.Context.Item.Fields[BookTemplate.Book.Fields.BookLanguage];
             model.BookLanguage = laguageField.Value;
-            return View(model);
+            return View(bookModel);
         }
 
         public ActionResult BookList()
