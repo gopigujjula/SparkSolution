@@ -185,6 +185,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <None Include="App_Config\Include\zzz\Spark.Serialization.config" />
     <Content Include="App_Config\Include\zzz\Unicorn.Configs.Default.config" />
+    <Content Include="App_Config\Include\zzz\Spark.ContentEditorProcess.config" />
     <None Include="Properties\PublishProfiles\Spark Profile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -204,6 +205,7 @@
     <Compile Include="BookTemplate.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Models\BookModel.cs" />
+    <Compile Include="Processors\CustomUrlOnContentEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

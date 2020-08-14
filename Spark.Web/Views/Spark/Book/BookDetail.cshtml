@@ -1,5 +1,6 @@
-﻿@using Sitecore.Mvc;
+﻿@using Sitecore.Mvc
 @using Spark.Web
+@using Sitecore.Mvc.Extensions
 
 <h2>
     @Html.Sitecore().Field(BookTemplate.Book.Fields.Title.ToString())
@@ -7,9 +8,15 @@
 <div>
     @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString())
 </div>
-<div>
-    @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString())
-</div>
-<div>
-    @Html.Sitecore().Field(BookTemplate.Book.Fields.Publisher.ToString())
-</div>
+@*{559609D5-907D-4929-BC7E-1999F740BD1F}
+Book Detail Edit Frame
+/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Spark/Book Detail Edit Frame*@
+@using (Html.EditFrame(Sitecore.Context.Item.ToString(), "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Spark/Book Detail Edit Frame", "Book Detail frame", "Edit", "classname", null))
+{
+    <div>
+        @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString())
+    </div>
+    <div>
+        @Html.Sitecore().Field(BookTemplate.Book.Fields.Publisher.ToString())
+    </div>
+}
