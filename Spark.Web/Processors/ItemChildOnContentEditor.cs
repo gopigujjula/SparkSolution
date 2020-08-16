@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Spark.Web.Processors
 {
-    public class CustomUrlOnContentEditor
+    public class ItemChildOnContentEditor
     {
         public void Process(GetContentEditorWarningsArgs args)
         {

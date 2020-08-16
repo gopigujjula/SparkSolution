@@ -21,7 +21,7 @@
             @Model.BookCategory
         </div>
         <div>
-            @Html.Glass().RenderImage(Model, f => f.BookCover)
+            @Html.Glass().RenderImage(Model, f => f.BookCover, isEditable: true)
         </div>
 }
 

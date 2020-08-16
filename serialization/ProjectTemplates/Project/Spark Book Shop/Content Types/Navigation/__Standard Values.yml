@@ -1,0 +1,21 @@
+﻿---
+ID: "93fb1679-dac5-4afa-a83d-9d6ae4f94c09"
+Parent: "07bfbd40-462f-4d7e-93d7-e58f5715f2cf"
+Template: "07bfbd40-462f-4d7e-93d7-e58f5715f2cf"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Navigation/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T055922Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "a382a1b0-880d-447a-af79-f35fdacebcef"
+      Hint: Navigation Title
+      Value: $name

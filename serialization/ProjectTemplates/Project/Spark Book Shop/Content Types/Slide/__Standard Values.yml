@@ -1,0 +1,21 @@
+﻿---
+ID: "2f030e58-8a33-4b15-98fc-d6fa3191a168"
+Parent: "4a62fa2a-7c17-48c6-ab53-c091466c1c62"
+Template: "4a62fa2a-7c17-48c6-ab53-c091466c1c62"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Slide/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T070033Z
+    - ID: "5b49d6ef-9e22-4c74-8c0e-1feec3b894da"
+      Hint: Name
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

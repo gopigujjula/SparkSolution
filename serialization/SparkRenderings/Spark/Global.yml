@@ -1,0 +1,14 @@
+﻿---
+ID: "01c55a0b-208c-42ff-85c0-bfecb0f60f4e"
+Parent: "5ed71fcf-60e6-46eb-93c3-c251de213658"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Spark/Global
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T064204Z

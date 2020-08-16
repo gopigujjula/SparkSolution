@@ -1,0 +1,25 @@
+﻿---
+ID: "de4e424a-cb00-44cd-865c-fcb2168c5471"
+Parent: "40e48741-0612-403c-a718-5a488ccaf099"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Spark Book Shop/Page Types/Article Template
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {B6D065DF-1CE4-4227-8BF4-E063C0F2CE8D}
+    {4546A0A8-59EC-44BD-9C3F-1EF4A36ED62D}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{C74ACC78-17B6-4E62-8C87-94EBB9BA9B81}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200724T064400Z
