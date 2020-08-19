@@ -1,0 +1,14 @@
+﻿---
+ID: "cfe384ab-3247-4c23-b469-5bdd61c9b9ec"
+Parent: "af2bfaa2-b68b-48d4-ae84-85bbba262675"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Spark Book Shop/Slider Rendering Parameters/Slider Properties
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200811T074155Z

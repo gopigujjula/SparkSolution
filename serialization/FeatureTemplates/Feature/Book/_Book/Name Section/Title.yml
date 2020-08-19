@@ -9,6 +9,10 @@ SharedFields:
   Hint: Unversioned
   Type: Checkbox
   Value: 1
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link text="google" linktype="external" url="http://google.com" anchor="" target="" />
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: "Single-Line Text"
@@ -17,6 +21,13 @@ SharedFields:
   Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: this is long description
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: Title field is used to show as Page title
   Versions:
   - Version: 1
     Fields:

@@ -1,0 +1,21 @@
+﻿---
+ID: "0ba03e1d-cd0c-4108-b34a-af2e3c6f7ef1"
+Parent: "cfe384ab-3247-4c23-b469-5bdd61c9b9ec"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Spark Book Shop/Slider Rendering Parameters/Slider Properties/Slide Count
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Integer
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200811T074155Z
