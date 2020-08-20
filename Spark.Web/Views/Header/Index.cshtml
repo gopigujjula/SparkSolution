@@ -3,18 +3,18 @@
 @using Sitecore.Data.Fields
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@{
-    var menuField = (MultilistField)Model.Item.Fields[HeaderTemplate.Header.Fields.Menu];
-    var navigationItems = menuField.GetItems();    
-}
+
 @if (Model != null)
 {
+    var menuField = (MultilistField)Model.Item.Fields[HeaderTemplate.Header.Fields.Menu];
+    var navigationItems = menuField.GetItems();
+
     <header>
         <div class="header-top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        @Html.Sitecore().Field(HeaderTemplate.Header.Fields.StoreLink.ToString(), Model.Item, new {@class= "web-url" })                       
+                        @Html.Sitecore().Field(HeaderTemplate.Header.Fields.StoreLink.ToString(), Model.Item, new { @class = "web-url" })
                     </div>
                     <div class="col-md-6">
                         <h5>@Html.Sitecore().Field(HeaderTemplate.Header.Fields.StoreHeaderText.ToString(), Model.Item)</h5>
@@ -40,12 +40,12 @@
                             <ul class="navbar-nav ml-auto">
                                 @foreach (var navigationItem in navigationItems)
                                 {
-                                <li class="navbar-item">
-                                    @Html.Sitecore().BeginField(NavigationTemplate.Navigation.Fields.NavigationLink.ToString(), navigationItem, new { @class = "nav-link" })
-                                    @*@Html.Sitecore().Field(NavigationTemplate.Navigation.Fields.NavigationTitle.ToString(), navigationItem)*@
-                                    @Html.Sitecore().EndField()
-                                </li>
-                                }                                
+                                    <li class="navbar-item">
+                                        @Html.Sitecore().BeginField(NavigationTemplate.Navigation.Fields.NavigationLink.ToString(), navigationItem, new { @class = "nav-link" })
+                                        @*@Html.Sitecore().Field(NavigationTemplate.Navigation.Fields.NavigationTitle.ToString(), navigationItem)*@
+                                        @Html.Sitecore().EndField()
+                                    </li>
+                                }
                             </ul>
                         </div>
                     }
@@ -54,6 +54,3 @@
         </div>
     </header>
 }
-
-
-
