@@ -1,0 +1,24 @@
+﻿---
+ID: "e72ec97b-841e-4f11-ba88-0c21e5c975c4"
+Parent: "c57df201-0e86-4f50-8c16-5f726ee9ac4d"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Book/Featured Books/Featured Section/Featured Books
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "StartSearchLocation={6B4873DD-0B75-420E-886F-227415608196}&TemplateFilter={C77CBF36-E660-4C1A-AB94-85F172CA180A}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Multilist with Search
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T201934Z

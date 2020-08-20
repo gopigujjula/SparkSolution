@@ -1,0 +1,41 @@
+﻿---
+ID: "1b7adb81-1600-4300-ad51-55d87dd6f5f3"
+Parent: "b2601a1a-672d-4bc0-9a98-aa5b1c17c45e"
+Template: "b2601a1a-672d-4bc0-9a98-aa5b1c17c45e"
+Path: /sitecore/templates/Project/Spark Book Shop/Page Types/Home/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{97DF8101-085E-4E66-A751-15B9ED5AEFF0}">
+        <r
+          id="{F188BEC6-1FE7-405F-A39B-0369A41B40F2}"
+          ph="main"
+          uid="{1FF99913-2B88-4308-85D3-AB6B921919C6}" />
+        <r
+          id="{D04AE95A-A57B-4A26-9D1F-3DC9DF899682}"
+          ph="main"
+          uid="{F3C1D69E-6F5B-4BE0-8C3B-E392C2047F51}" />
+        <r
+          id="{5C32C4F6-36A7-4C07-B1D9-8C00862F73D5}"
+          ph="main"
+          uid="{7F6F31A5-0A0F-4FD5-98FA-4BC05E8D5807}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T053537Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

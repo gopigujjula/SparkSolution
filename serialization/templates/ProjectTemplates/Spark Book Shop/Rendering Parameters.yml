@@ -1,0 +1,14 @@
+﻿---
+ID: "7660fb87-3269-403f-ad22-f414171203bb"
+Parent: "a20d89f6-815e-46ea-a60d-d0f569d70e9b"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project/Spark Book Shop/Rendering Parameters
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T200726Z

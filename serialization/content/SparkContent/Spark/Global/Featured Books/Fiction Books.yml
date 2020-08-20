@@ -1,0 +1,25 @@
+﻿---
+ID: "23bee82c-98d2-416a-b7f2-0f65e549012f"
+Parent: "bc235f17-d70c-4cec-8026-8a3a15393046"
+Template: "e6e0c1a2-0bdc-4100-b4cd-6827e446fdb6"
+Path: /sitecore/content/Spark/Global/Featured Books/Fiction Books
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T203520Z
+    - ID: "c58a56ac-7a77-4d07-8c1b-cc47abd3e02f"
+      Hint: Featured Title
+      Value: Highly Recommended Books
+    - ID: "e72ec97b-841e-4f11-ba88-0c21e5c975c4"
+      Hint: Featured Books
+      Type: Multilist with Search
+      Value: |
+        {D02AA672-7CF7-43EA-9C97-22785A89484A}
+        {5CEF4EEE-4160-41EF-88C2-5432CCB82568}
+        {A689213E-9931-4A53-B0F3-3BC78FA2D4CD}
+        {E7BD67A1-803D-46C7-BE21-3E8A3EBDD108}

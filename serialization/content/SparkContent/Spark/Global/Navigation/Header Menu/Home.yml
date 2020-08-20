@@ -1,0 +1,25 @@
+﻿---
+ID: "d4420518-7ffe-4bd5-ac03-a4a4275272ab"
+Parent: "cb1df842-f8db-4aa3-8566-09f237be752b"
+Template: "07bfbd40-462f-4d7e-93d7-e58f5715f2cf"
+Path: /sitecore/content/Spark/Global/Navigation/Header Menu/Home
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c613aca-54c7-4387-a9b4-957d5c722277"
+      Hint: Navigation Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{4D403C20-63B1-442A-82FD-11D4202DFD64}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T061634Z
+    - ID: "a382a1b0-880d-447a-af79-f35fdacebcef"
+      Hint: Navigation Title
+      Value: Home

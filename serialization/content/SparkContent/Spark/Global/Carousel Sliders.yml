@@ -1,0 +1,14 @@
+﻿---
+ID: "c8e43fb5-c0bc-466d-9580-65c33f85a889"
+Parent: "d4c5cc69-6966-43e9-bb2d-f2a9c9356cbd"
+Template: "30952a8d-8372-41f8-97a0-73b94e906077"
+Path: /sitecore/content/Spark/Global/Carousel Sliders
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T212536Z

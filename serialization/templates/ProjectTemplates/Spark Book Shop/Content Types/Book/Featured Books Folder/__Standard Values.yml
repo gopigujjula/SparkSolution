@@ -1,0 +1,25 @@
+﻿---
+ID: "e8ee3d98-3911-4534-b3b4-693b67de4e27"
+Parent: "9a40d5ba-d74a-44eb-b7e9-0a129f1c5e98"
+Template: "9a40d5ba-d74a-44eb-b7e9-0a129f1c5e98"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Book/Featured Books Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {E6E0C1A2-0BDC-4100-B4CD-6827E446FDB6}
+    {9A40D5BA-D74A-44EB-B7E9-0A129F1C5E98}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T203126Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

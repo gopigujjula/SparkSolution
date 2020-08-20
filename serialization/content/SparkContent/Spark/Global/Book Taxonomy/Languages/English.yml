@@ -1,0 +1,17 @@
+﻿---
+ID: "888b4539-3087-457c-896b-863e103416ee"
+Parent: "d571cc59-5635-4fdc-9b39-df30e2ae7588"
+Template: "f09e9cb8-5fe1-4036-8d37-f810137cd30f"
+Path: /sitecore/content/Spark/Global/Book Taxonomy/Languages/English
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "24281b02-55b2-475a-b00a-6e3278ca0f6e"
+      Hint: Title
+      Value: English
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T055439Z

@@ -1,0 +1,18 @@
+﻿---
+ID: "d4c5cc69-6966-43e9-bb2d-f2a9c9356cbd"
+Parent: "b4f128fa-db7b-4773-a15c-7a292dc8abe0"
+Template: "6af6f7ff-3f98-40de-9348-e9309da58987"
+Path: /sitecore/content/Spark/Global
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T054008Z

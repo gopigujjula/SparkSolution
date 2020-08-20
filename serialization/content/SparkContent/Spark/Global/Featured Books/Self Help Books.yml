@@ -1,0 +1,25 @@
+﻿---
+ID: "222c09c9-2dde-4a1b-8980-8dc2535f150b"
+Parent: "bc235f17-d70c-4cec-8026-8a3a15393046"
+Template: "e6e0c1a2-0bdc-4100-b4cd-6827e446fdb6"
+Path: /sitecore/content/Spark/Global/Featured Books/Self Help Books
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T203552Z
+    - ID: "c58a56ac-7a77-4d07-8c1b-cc47abd3e02f"
+      Hint: Featured Title
+      Value: Highly Recommended Books
+    - ID: "e72ec97b-841e-4f11-ba88-0c21e5c975c4"
+      Hint: Featured Books
+      Type: Multilist with Search
+      Value: |
+        {8D9A4F57-4DE8-4990-B51F-A34C9B08133C}
+        {5151DE0E-8302-4A32-8EB1-81965D115EAE}
+        {8136F9A8-CB7B-4F12-816F-06CD0120FFF7}
+        {20142621-B837-4253-8DC0-BC823EB05078}

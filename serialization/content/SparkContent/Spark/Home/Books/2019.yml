@@ -1,0 +1,14 @@
+﻿---
+ID: "029c87e2-3dd1-4cf6-9314-e745ba9656dd"
+Parent: "6b4873dd-0b75-420e-886f-227415608196"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Spark/Home/Books/2019
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200818T060934Z

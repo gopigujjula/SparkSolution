@@ -1,0 +1,26 @@
+﻿---
+ID: "2da25afb-203e-4780-afcf-33230d440e3f"
+Parent: "c8e43fb5-c0bc-466d-9580-65c33f85a889"
+Template: "60a3c94d-9a84-4ce0-8d51-3f3c7584c454"
+Path: /sitecore/content/Spark/Global/Carousel Sliders/Carousel Slider
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T065952Z
+    - ID: "3ac463b0-de1f-4d98-842a-c750897c24d6"
+      Hint: Slides
+      Type: Treelist
+      Value: |
+        {7028CA55-F5E6-4345-B034-519DFF6FD6F4}
+        {79C1A990-9ECC-459F-9680-1E26C69A165B}
+        {89F0B2EE-E694-43A5-BDBA-3039410ED080}
+        {19E6863A-16D8-401C-945D-CED78B45253A}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

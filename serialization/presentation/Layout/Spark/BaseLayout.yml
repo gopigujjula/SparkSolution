@@ -1,0 +1,18 @@
+﻿---
+ID: "97df8101-085e-4e66-a751-15b9ed5aeff0"
+Parent: "52010498-ad87-497d-b762-9b963331d3e5"
+Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
+Path: /sitecore/layout/Layouts/Spark/BaseLayout
+DB: master
+SharedFields:
+- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
+  Hint: Path
+  Value: /views/spark/BaseLayout.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200727T063926Z

@@ -4,6 +4,7 @@ namespace Spark.Web.Models
 {
     public class BookSearchResult
     {
+        public List<IBook> Books { get; set; }
         public List<BookItem> BookItems { get; set; }        
         public List<Facet> Facets { get; set; }
         public int AvailableCount { get; set; }
@@ -14,6 +15,7 @@ namespace Spark.Web.Models
         public string Title { get; set; }
         public string Publisher { get; set; }
         public string AuthorName { get; set; }       
+        public string FrontCover { get; set; }
     }
     public class Facet
     {

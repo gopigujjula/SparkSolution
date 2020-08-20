@@ -1,0 +1,35 @@
+﻿---
+ID: "662e6e44-e4da-48ab-82d9-1c1c55a0a80a"
+Parent: "ef4f7c60-9b51-4bf4-8c83-7a338a75759a"
+Template: "f9688627-7958-4f52-b155-c987457debec"
+Path: /sitecore/content/Spark/Global/Header/Header
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b355e1c-8318-4b88-bb29-1b7c8f9c8b71"
+      Hint: Store Link
+      Value: |
+        <link text="Flipkart" linktype="external" url="https://www.flipkart.com/" anchor="" title="Flipkart" target="_blank" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T060956Z
+    - ID: "74405754-74f8-4c05-b873-a0f12a3b1c3d"
+      Hint: Menu
+      Type: Treelist
+      Value: |
+        {D4420518-7FFE-4BD5-AC03-A4A4275272AB}
+        {3B97B02E-E354-41D0-A470-40AD0544E340}
+        {7D31354A-D89B-4CDF-84F0-B94A4C8EFBD4}
+    - ID: "8305e257-1052-4337-a32d-e64edffdce14"
+      Hint: Store Phone Number
+      Value: "Call : 800 1234 5678"
+    - ID: "93003e48-6330-42bc-926b-243acce172c5"
+      Hint: Store Header Text
+      Value: Free Shipping Over ₹500 + 3 Free Samples With Every Order
+    - ID: "98c7415a-f715-4ae9-b3ee-af3dfdde57bf"
+      Hint: Logo
+      Value: |
+        <image mediaid="{6C060ECA-40E8-4400-B75A-5001DA499B7B}" />

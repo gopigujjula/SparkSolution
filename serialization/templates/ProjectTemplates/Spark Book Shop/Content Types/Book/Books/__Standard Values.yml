@@ -1,0 +1,45 @@
+﻿---
+ID: "4ca2b28d-90e4-40bc-8342-d5976a928aad"
+Parent: "0abd47d4-ba34-48a9-85a3-e8ecee90799e"
+Template: "0abd47d4-ba34-48a9-85a3-e8ecee90799e"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Book/Books/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {C77CBF36-E660-4C1A-AB94-85F172CA180A}
+    {0ABD47D4-BA34-48A9-85A3-E8ECEE90799E}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{97DF8101-085E-4E66-A751-15B9ED5AEFF0}">
+        <r
+          ds="{662E6E44-E4DA-48AB-82D9-1C1C55A0A80A}"
+          id="{F188BEC6-1FE7-405F-A39B-0369A41B40F2}"
+          par=""
+          ph="main"
+          uid="{126AC3EC-C9F9-4C2C-9312-399227F413AB}" />
+        <r
+          id="{20908F60-CD02-44B1-90A3-C344E6E8FC28}"
+          ph="main"
+          uid="{A8A77DD1-7F5B-462C-A3FC-115DA9858322}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T050151Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,39 +1,40 @@
 ﻿@using Sitecore.Mvc;
 @using Spark.Web
 @using Spark.Web.Models
+@using Glass.Mapper.Sc.Web.Mvc
 @model BookSearchResult
 
-@if (Model != null && Model.BookItems != null && Model.BookItems.Any())
+@if (Model != null && Model.Books != null && Model.Books.Any())
 {
-    <span>=================================================================================</span>
-    foreach (var bookItem in Model.BookItems)
-    {
-        <div>
-            Book: @bookItem.Title
-        </div>
-        @*<div>
-                @Html.Sitecore().Field(BookTemplate.Book.Fields.Description.ToString(), item)
+    <section class="recent-book-sec">
+        <div class="container">
+            <div class="title">
+                <h2>Books</h2>
+                <hr>
             </div>
-            <div>
-                @Html.Sitecore().Field(BookTemplate.Book.Fields.FrontCover.ToString(), item)
-            </div>*@
-        <div>
-            Publisher: @bookItem.Publisher
+            <div class="row">
+                @foreach (var book in Model.Books)
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="item">
+                            @Html.Glass().RenderImage(book, f => f.BookCover, isEditable: true)
+                            <h3>@Html.Glass().Editable(book, f => f.Title)</h3>
+                            <h6>
+                                @*<span class="price">$49</span> /*@
+                                <a href="#">Buy Now</a> @*Dictionary Item*@
+                            </h6>
+                            <div class="hover">
+                                <a href="@book.Url">
+                                    <span>
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true">
+                                        </i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
-        <div>
-            Author: @bookItem.AuthorName
-        </div>
-
-        <span>=================================================================================</span>
-    }
-
-    <span>=================================================================================</span>
-    <h2>Authors</h2>
-    foreach (var facet in Model.Facets)
-    {
-        <div>
-            Author Name: @facet.Name (@facet.Count)
-        </div>                
-        <span>=================================================================================</span>
-    }
+    </section>
 }

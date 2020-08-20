@@ -1,0 +1,18 @@
+﻿---
+ID: "ced25fe2-e43c-4c7c-ab1a-3e7cf9102492"
+Parent: "e6e0c1a2-0bdc-4100-b4cd-6827e446fdb6"
+Template: "e6e0c1a2-0bdc-4100-b4cd-6827e446fdb6"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Book/Featured Books/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T202157Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

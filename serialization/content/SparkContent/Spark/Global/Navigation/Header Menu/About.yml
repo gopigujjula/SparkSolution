@@ -1,0 +1,21 @@
+﻿---
+ID: "7d31354a-d89b-4cdf-84f0-b94a4c8efbd4"
+Parent: "cb1df842-f8db-4aa3-8566-09f237be752b"
+Template: "07bfbd40-462f-4d7e-93d7-e58f5715f2cf"
+Path: /sitecore/content/Spark/Global/Navigation/Header Menu/About
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c613aca-54c7-4387-a9b4-957d5c722277"
+      Hint: Navigation Link
+      Value: |
+        <link text="About" linktype="external" url="https://www.flipkart.com/about-us" anchor="" title="About" target="_blank" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T061759Z
+    - ID: "a382a1b0-880d-447a-af79-f35fdacebcef"
+      Hint: Navigation Title
+      Value: About

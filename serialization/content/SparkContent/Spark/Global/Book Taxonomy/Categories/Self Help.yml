@@ -1,0 +1,17 @@
+﻿---
+ID: "29614f2c-562f-41b8-9837-0546f99dc9aa"
+Parent: "9cd2c5b1-26ac-4cfe-a6dc-f61244c35dc5"
+Template: "f09e9cb8-5fe1-4036-8d37-f810137cd30f"
+Path: /sitecore/content/Spark/Global/Book Taxonomy/Categories/Self Help
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "24281b02-55b2-475a-b00a-6e3278ca0f6e"
+      Hint: Title
+      Value: Self Help
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T054536Z

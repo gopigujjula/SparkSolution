@@ -1,0 +1,14 @@
+﻿---
+ID: "bc235f17-d70c-4cec-8026-8a3a15393046"
+Parent: "d4c5cc69-6966-43e9-bb2d-f2a9c9356cbd"
+Template: "9a40d5ba-d74a-44eb-b7e9-0a129f1c5e98"
+Path: /sitecore/content/Spark/Global/Featured Books
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T203505Z

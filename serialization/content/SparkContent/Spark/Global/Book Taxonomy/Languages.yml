@@ -1,0 +1,14 @@
+﻿---
+ID: "d571cc59-5635-4fdc-9b39-df30e2ae7588"
+Parent: "ab892202-40a9-4692-a87d-6e333ae80cbe"
+Template: "42b95190-60ec-4575-b8b3-3753f2700264"
+Path: /sitecore/content/Spark/Global/Book Taxonomy/Languages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190511T055344Z

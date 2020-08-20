@@ -1,0 +1,25 @@
+﻿---
+ID: "b90f87db-300e-44da-a316-372f71ed6046"
+Parent: "30952a8d-8372-41f8-97a0-73b94e906077"
+Template: "30952a8d-8372-41f8-97a0-73b94e906077"
+Path: /sitecore/templates/Project/Spark Book Shop/Content Types/Global/Carousel Slider Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {60A3C94D-9A84-4CE0-8D51-3F3C7584C454}
+    {30952A8D-8372-41F8-97A0-73B94E906077}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T212232Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

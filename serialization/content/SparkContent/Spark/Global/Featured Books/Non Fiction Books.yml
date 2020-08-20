@@ -1,0 +1,25 @@
+﻿---
+ID: "39746fb9-d71f-4729-afd6-8498941e2b20"
+Parent: "bc235f17-d70c-4cec-8026-8a3a15393046"
+Template: "e6e0c1a2-0bdc-4100-b4cd-6827e446fdb6"
+Path: /sitecore/content/Spark/Global/Featured Books/Non Fiction Books
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200819T203539Z
+    - ID: "c58a56ac-7a77-4d07-8c1b-cc47abd3e02f"
+      Hint: Featured Title
+      Value: Highly Recommended Books
+    - ID: "e72ec97b-841e-4f11-ba88-0c21e5c975c4"
+      Hint: Featured Books
+      Type: Multilist with Search
+      Value: |
+        {78214453-BE3A-4CB2-8C7E-DFA76F9F4A0F}
+        {8F659AEA-18A1-45F0-B1E5-FDFA6FC1A299}
+        {443EBCC4-6D92-4771-9264-8AF2E8EBF8C7}
+        {EAF6E727-67D2-4858-B8F1-63DECAEA6B5E}

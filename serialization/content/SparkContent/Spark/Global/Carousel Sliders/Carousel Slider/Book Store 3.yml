@@ -1,0 +1,27 @@
+﻿---
+ID: "89f0b2ee-e694-43a5-bdba-3039410ed080"
+Parent: "2da25afb-203e-4780-afcf-33230d440e3f"
+Template: "4a62fa2a-7c17-48c6-ab53-c091466c1c62"
+Path: /sitecore/content/Spark/Global/Carousel Sliders/Carousel Slider/Book Store 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T070055Z
+    - ID: "4cafb9e4-b470-4370-bea6-c9081db6ea4a"
+      Hint: Slide Image
+      Value: |
+        <image mediaid="{30AD28A0-363D-4B10-A83F-CE52700C422C}" ></image>
+    - ID: "5b49d6ef-9e22-4c74-8c0e-1feec3b894da"
+      Hint: Name
+      Value: welcome to bookstore
+    - ID: "c17a6837-3605-49d9-9aee-159dfc38de1c"
+      Hint: Link
+      Value: 
+    - ID: "dd7aa41c-ebab-4488-b93f-789908943ff1"
+      Hint: Description
+      Value: Discover the best books online with us
