@@ -1,27 +1,30 @@
 ﻿using Sitecore.Buckets.Extensions;
 using Sitecore.Buckets.Managers;
 using Sitecore.IO;
-using Sitecore.Links;
+using Sitecore.Links.UrlBuilders;
 
 namespace Spark.Web.Custom_Code
 {
-    public class CustomLinkProvider : LinkProvider
+    public class CustomLinkProvider : ItemUrlBuilder
     {
-        public override string GetItemUrl(Sitecore.Data.Items.Item item, 
-            UrlOptions options)
+        public CustomLinkProvider(DefaultItemUrlBuilderOptions option) : base(option)
+        {
+        }
+        public override string Build(Sitecore.Data.Items.Item item, 
+            ItemUrlBuilderOptions options)
         {
             if (BucketManager.IsItemContainedWithinBucket(item))
             {
                 var bucketItem = item.GetParentBucketItemOrParent();
                 if (bucketItem != null && bucketItem.IsABucket())
                 {
-                    var bucketUrl = base.GetItemUrl(bucketItem, options);
+                    var bucketUrl = base.Build(bucketItem, options);
 
                     return FileUtil.MakePath(bucketUrl, item.Name.Replace(" ", "-"));
                 }
             }
 
-            return base.GetItemUrl(item, options);
+            return base.Build(item, options);
         }
     }
 }

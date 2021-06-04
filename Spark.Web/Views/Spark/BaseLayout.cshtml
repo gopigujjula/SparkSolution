@@ -1,4 +1,5 @@
-﻿@using Sitecore.Mvc;
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
 @using Spark.Web
 @{
     Layout = null;
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="~/assets/css/styles.css" rel="stylesheet" />
+    @Html.Sitecore().VisitorIdentification()
 </head>
 <body>
     @Html.Sitecore().Placeholder("main")

@@ -24,11 +24,13 @@ namespace Spark.Web.Controllers
 
             if (_mvcContext.HasDataSource)
             {
+                //Sitecore.Mvc.Presentation.RequestContextExtensions.Current.
+                
                 _mvcContext.GetDataSourceItem<SliderModel>();
-                var dataSourceID = RenderingContext.Current.Rendering.DataSource;
-                var datasourceItem = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(dataSourceID));
-
-                MultilistField slidesField = datasourceItem.Fields["{3AC463B0-DE1F-4D98-842A-C750897C24D6}"];
+                var dataSource = RenderingContext.Current.Rendering.Item;
+                //var datasourceItem = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(dataSourceID));
+                
+                MultilistField slidesField = dataSource.Fields["{3AC463B0-DE1F-4D98-842A-C750897C24D6}"];
                 if (slidesField?.Count > 0)
                 {
                     model.Slides = slidesField.GetItems().ToList();

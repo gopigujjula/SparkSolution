@@ -92,6 +92,9 @@
     <Reference Include="Sitecore.Mvc, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Mvc.9.3.0\lib\net471\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.Analytics.9.3.0\lib\net471\Sitecore.Mvc.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="sysglobl" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
@@ -240,7 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Global\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
